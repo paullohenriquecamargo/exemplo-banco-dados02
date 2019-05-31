@@ -139,7 +139,7 @@ namespace Repositorio
             comando.ExecuteNonQuery();
             conexao.Close();                
         }
-        
+
         public void Atualizar(Filme filme)
         {
             SqlConnection conexao = new SqlConnection();
@@ -166,7 +166,10 @@ WHERE id = @ID";
             comando.ExecuteNonQuery();
             conexao.Close();
 
+
                 
         }
+
+
     }
 }
